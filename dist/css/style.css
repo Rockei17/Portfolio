@@ -1,0 +1,362 @@
+:root {
+    /* Sections Global Width */
+    --sections-global-width: 90%;
+    --about-h1: 2rem;
+    --primary-color: #800000;
+    --secondary-color: #ebebeb;
+    /*Expertice*/
+    --param-font-size: 1rem;
+    --param-let-spacing: 1px;
+    --param-line-height: 1.3rem;
+}
+/*html {
+    scroll-behavior: smooth;
+}*/
+body {
+    font-family: Ariel, Helvetica, sans-serif;
+}
+/*Hero Section*****************/
+.container-hero {
+    padding-top: 4rem;
+    width: 100%;
+    height: 90vh;
+}
+.container-hero img {
+    width: 100%;
+    height: 100%;
+}
+
+/*About Me********************/
+.container-about {
+    width: 100%;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-wrapper {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+/*About Me Text*/
+.about div:nth-child(1) {
+    padding-bottom: 35px;
+}
+.about div h1 {
+    font-size: var(--about-h1);
+    font-weight: 500;
+}
+.about div h2 {
+    font-size: var(--about-h1);
+}
+.about-content p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+}
+.about-content p:nth-child(2) {
+    padding: 25px 0px;
+}
+.about-content p span {
+    font-weight: 600;
+}
+/*About img*/
+/*.about-img{
+    background-color: #fff;
+}*/
+.line-box {
+    border: 6px solid #000;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+.line-box img {
+    width: 60%;
+    height: 100%;
+}
+
+/* Experties/ Experience */
+.container-expert-expe {
+    background-color: #dfdfdf;
+    width: 100%;
+    padding: 5rem 0rem;
+}
+.container-experience {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+}
+.param h1 {
+    font-size: var(--about-h1);
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+.param p {
+    font-size: var(--param-font-size);
+    letter-spacing: var(--param-let-spacing);
+    line-height: var(--param-line-height);
+}
+.param {
+    margin-bottom: 2rem;
+}
+
+.container-expertise {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.container-expertise div .box1 {
+    padding-bottom: 3.5rem;
+    margin-bottom: 2rem;
+}
+.container-expertise div .box2 {
+    padding-bottom: 1.1rem;
+}
+.container-expertise div .box3 {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+.experience-box div p:nth-child(1) {
+    background-color: var(--primary-color);
+    width: 55%;
+    color: #fff;
+    padding: 0.5rem 0.6rem 0.5rem 1.1rem;
+    font-size: 0.8rem;
+    letter-spacing: var(--param-let-spacing);
+    margin-bottom: 2rem;
+}
+.experience-box div h4 span {
+    color: coral;
+    text-transform: uppercase;
+}
+.experience-box div p:nth-child(4) {
+    font-size: var(--param-font-size);
+    letter-spacing: var(--param-let-spacing);
+    line-height: var(--param-line-height);
+    margin-top: 1rem;
+}
+.experience-box div {
+    padding: 1rem 0rem 0rem 2rem;
+}
+.experience-box {
+    border-left: 2px solid var(--primary-color);
+}
+
+/* Projects */
+.container-portfolio-projects {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem 0rem 0rem 0rem;
+}
+.container-portfolio-projects h1 {
+    font-size: var(--about-h1);
+}
+
+.container-portfolio-projects .buttons button {
+    padding: 0.4rem 1rem;
+    margin: 1rem 0rem 1.5rem 0rem;
+    border: none;
+    font-size: 1.1rem;
+}
+
+/*Button Active when click the button add this class*/
+.active-button {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+/* Icons */
+.logo-conteiner-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    width: 95%;
+    background-color: var(--secondary-color);
+    padding: 2rem 2rem 2rem 1rem;
+}
+.logo-conteiner-icons div {
+    background-color: #fff;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px 18px;
+}
+.logo-conteiner-icons img {
+    width: 100%;
+}
+
+/* Landing Pages */
+
+.landing-page .logo-conteiner-iconss {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    width: 95%;
+    height: 56vh;
+    background-color: var(--secondary-color);
+    padding: 2rem 2rem 2rem 1rem;
+}
+.logo-conteiner-iconss div {
+    background-color: #fff;
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px 15px;
+}
+.logo-conteiner-iconss img {
+    width: 100%;
+    height: 100%;
+}
+/* Contact Form */
+.container-contact-form {
+    width: 100%;
+    margin-top: 3rem;
+    background-color: var(--secondary-color);
+}
+.container-contact-form .contact-form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10rem 0rem;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+/* Address and Contact Info */
+.container-contact-form .contact-address {
+    width: 100%;
+}
+.container-contact-form .contact-address .address {
+    padding: 2rem 0rem;
+}
+.container-contact-form .contact-address .email {
+    padding-bottom: 2rem;
+}
+.container-contact-form .contact-address .email a,
+.contact-address .phone a {
+    text-decoration: none;
+}
+.container-contact-form .email h4,
+.container-contact-form .address h4,
+.container-contact-form .phone h4 {
+    padding-bottom: 0.5rem;
+}
+/* Submition Form */
+.container-contact-form .container-submition-form .submition-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+}
+.container-contact-form .container-submition-form .submition-form input {
+    width: 90%;
+    height: 1.5rem;
+    font-size: 1.1rem;
+}
+.container-contact-form .container-submition-form .container-message {
+    padding-top: 2rem;
+}
+.container-contact-form .container-submition-form .container-message textarea {
+    width: 95%;
+    height: 7rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+/* Submit Button */
+.container-contact-form .submit-button {
+    padding-top: 1rem;
+}
+.container-contact-form .submit-button input {
+    padding: 0.5rem 2rem;
+    background-color: var(--primary-color);
+    border: var(--primary-color) solid;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: 1s;
+}
+.container-contact-form .submit-button input:hover {
+    background-color: #fff;
+    border: #fff solid;
+    color: var(--primary-color);
+}
+/* Footer */
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+/* Media Query Tablet */
+@media screen and (max-width: 960px) {
+    /*Contact Form*/
+    .container-contact-form .contact-address {
+        width: 100%;
+        text-align: center;
+    }
+    .container-submition-form {
+        padding-top: 3rem;
+    }
+    .container-submition-form h1 {
+        text-align: center;
+    }
+    .container-contact-form .contact-form {
+        display: block;
+        height: 100%;
+    }
+    .container-contact-form .container-submition-form .submition-form {
+        display: block;
+    }
+    .submition-form-name {
+        padding-top: 1rem;
+    }
+    .container-contact-form .submit-button input {
+        width: 100%;
+    }
+    .container-contact-form .container-submition-form .submition-form input,
+    .container-contact-form
+        .container-submition-form
+        .container-message
+        textarea {
+        width: 99%;
+    }
+}
+/*Media Query Mobile*/
+@media screen and (max-width: 560px) {
+    .container-hero {
+        padding-top: 3.5rem;
+    }
+    .container-hero {
+        height: 40vh;
+    }
+    .about-wrapper {
+        display: block;
+        padding-bottom: 4rem;
+    }
+    .container-expertise {
+        display: block;
+    }
+    /*Portfolios*/
+    .logo-conteiner-icons {
+        grid-gap: 3rem;
+        padding: 2rem 3rem 2rem 1rem;
+        width: 80%;
+    }
+    .logo-conteiner-iconss {
+        grid-gap: 3rem;
+        padding: 2rem 3rem 2rem 1rem;
+        width: 80%;
+    }
+    .landing-page .logo-conteiner-iconss {
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+        height: 100%;
+        padding: 1rem 1.7rem 2rem 1rem;
+    }
+    .logo-conteiner-iconss div {
+        height: 90%;
+    }
+}
